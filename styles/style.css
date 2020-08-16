@@ -31,6 +31,14 @@ body {
 
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*             Header              */
