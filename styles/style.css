@@ -172,6 +172,9 @@ body {
 }
 
 /*      Чем мы занимаемся       */
+.activity {
+	margin-bottom: 94px;
+}
 
 .activity-title {
 	margin-top: 0;
@@ -194,8 +197,31 @@ body {
 /*             Team              */
 
 .team {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
 	background-color: var(--secondary-bg-color);
 	font-size: 16px;
+}
+
+.team .list {
+	display: flex;
+}
+
+.team .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: var(--primary-bg-color);
+}
+
+.team .social {
+	margin-bottom: 30px;
+}
+
+.team .item:not(:last-child) {
+	margin-right: 30px;
 }
 
 .team-title {
@@ -209,6 +235,9 @@ body {
 }
 
 .team-name {
+	margin-top: 30px;
+	margin-bottom: 10px;
+
 	color: var(--title-text-color);
 	line-height: 1.18;
 }
@@ -216,16 +245,28 @@ body {
 /*             Footer              */
 
 .footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
 	color: rgba(255, 255, 255, 0.6);
 	background-color: var(--footer-bg-color);
 }
 
 .footer .logo {
+	margin-bottom: 20px;
+
 	color: var(--secondary-text-color);
 }
 
-.contacts a {
+.footer a {
+	display: block;
+
+	font-style: normal;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts a:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 .contacts .contacts-street {
