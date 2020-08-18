@@ -114,12 +114,14 @@ body {
 
 /*             Hero              */
 .hero {
+	margin-bottom: 94px;
+
 	background-color: var(--footer-bg-color);
+	text-align: center;
 }
 
 .hero-title {
 	display: inline-block;
-	margin-top: 200px;
 	margin-bottom: 30px;
 
 	color: var(--secondary-text-color);
@@ -131,11 +133,10 @@ body {
 }
 
 .hero-btn {
-	margin-bottom: 200px;
 	padding: 10px 32px;
 
 	color: var(--secondary-text-color);
-	background-color: var(--assent-color );
+	background-color: var(--assent-color);
 	border: 1px solid var(--assent-color);
 	border-radius: 4px;
 	font-family: inherit;
@@ -146,16 +147,48 @@ body {
 }
 
 /*      Преимущества       */
+.features-list {
+	display: flex;
+	margin-bottom: 94px;
+}
+
+.features-list .item {
+	width: 270px;
+}
+
+.features-list .item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.features-list p {
+	margin: 0 0;
+}
 
 .features-title {
 	color: var(--title-text-color);
+
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 /*      Чем мы занимаемся       */
 
 .activity-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+
 	color: var(--title-text-color);
+	font-size: 36px;
 	line-height: 1.16;
+	text-align: center;
+}
+
+.activity .list {
+	display: flex;
+}
+
+.activity .item:not(:last-child) {
+	margin-right: 30px;
 }
 
 /*             Team              */
@@ -166,8 +199,13 @@ body {
 }
 
 .team-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+
 	color: var(--title-text-color);
+	font-size: 36px;
 	line-height: 1.16;
+	text-align: center;
 }
 
 .team-name {
