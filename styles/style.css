@@ -116,6 +116,8 @@ body {
 
 /*             Hero              */
 .hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
 	background-color: var(--footer-bg-color);
 	text-align: center;
 }
@@ -267,7 +269,7 @@ body {
 	display: block;
 
 	font-style: normal;
-	color: rgba(255, 255, 255, 0.6);
+	color: inherit;
 }
 
 .contacts a:not(:last-child) {
@@ -322,14 +324,15 @@ body {
 }
 
 .examples-list li {
-	width: 370px;
+	width: calc((100% - 60px) / 3);
+	margin-right: 30px;
 
 	background-color: var(--primary-bg-color);
 	border: 1px solid var(--secondary-bg-color);
 }
 
-.examples-list li:not(:nth-child(3n + 3)) {
-	margin-right: 30px;
+.examples-list li:nth-child(3n) {
+	margin-right: 0;
 }
 
 .examples-list li:not(:nth-last-child(-n + 3)) {
